@@ -223,7 +223,8 @@
 
   /* ===== TROPHIES (certifications) ===== */
   #trophies{ background:var(--cream-dark); }
-  .trophy-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:24px; }
+  .trophy-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+  @media (max-width:900px){ .trophy-grid{ grid-template-columns:repeat(2,1fr); } }
   @media (max-width:700px){ .trophy-grid{ grid-template-columns:1fr; } }
   .trophy-card{ background:var(--gold); border:4px solid var(--ink); box-shadow:6px 6px 0 var(--ink); padding:22px 26px; }
   .trophy-icon{ width:46px; height:46px; background:var(--cream); border:3px solid var(--ink); display:flex; align-items:center; justify-content:center; font-size:22px; margin-bottom:14px; }
@@ -489,6 +490,26 @@
     </div>
   </div>
 
+  <div class="quest-card alt">
+    <div class="quest-head">■ ■ ■ &nbsp; WEB UTILITY QUEST</div>
+    <div class="quest-body">
+      <div class="quest-name">GST Invoice Generator</div>
+      <div class="quest-desc">A 3-step GST invoice generator built for students &amp; freelancers — fill your details, add line items with SAC/HSN codes, and download a clean watermark-free PDF with auto CGST/SGST vs IGST detection, bank details, and UPI ID included.</div>
+      <ul class="quest-stats">
+        <li>Auto CGST+SGST vs IGST detection based on seller &amp; buyer state</li>
+        <li>Works without GSTIN — unregistered freelancers &amp; students welcome</li>
+        <li>Dynamic item table with SAC/HSN codes, qty, rate &amp; GST% per line</li>
+        <li>Bank details + UPI ID + payment terms printed on invoice</li>
+        <li>Clean PDF, zero watermark — details saved in browser, never sent to any server</li>
+      </ul>
+      <div class="tag-row">
+        <div class="tag">HTML</div>
+        <div class="tag">CSS</div>
+      </div>
+      <a class="quest-link" href="https://gst-invoice-omega.vercel.app/" target="_blank">▶ Live Demo</a>
+    </div>
+  </div>
+
 </section>
 
 <section id="trophies">
@@ -506,6 +527,12 @@
       <div class="trophy-name pixel-font">AI FLUENCY FRAMEWORK</div>
       <div class="trophy-meta">Anthropic / Claude · Jun 2026</div>
       <div class="trophy-link">Verify: verify.skilljar.com/c/aia2bmiqdqv9</div>
+    </div>
+    <div class="trophy-card">
+      <div class="trophy-icon">🧠</div>
+      <div class="trophy-name pixel-font">AI TRAINING</div>
+      <div class="trophy-meta">Digital Heros · Jun 2026</div>
+      <div class="trophy-link"><a href="https://library.digitalheroes.co.in/verify.html?code=DMH-AT-SA-BCBS-3VMR" target="_blank" style="color:var(--ink);word-break:break-all;">Verify: library.digitalheroes.co.in</a></div>
     </div>
   </div>
 </section>
